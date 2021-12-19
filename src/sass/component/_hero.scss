@@ -1,0 +1,140 @@
+.animated {
+   display: inline;
+   padding-left: 15px;
+}
+
+.animated span {
+   position: absolute;
+   animation: show 4s linear infinite 0s;
+   opacity: 0;
+   overflow: hidden;
+   color: whitesmoke;
+}
+
+.animated span:nth-child(2) {
+   animation-delay: 1s;
+}
+
+.animated span:nth-child(3) {
+   animation-delay: 2s;
+}
+
+.animated span:nth-child(4) {
+   animation-delay: 3s;
+}
+
+.animated span:nth-child(5) {
+   animation-delay: 4s;
+}
+
+@keyframes show {
+   0% {
+      opacity: 0;
+   }
+
+   1% {
+      transform: translateY(-20px);
+   }
+   4% {
+      opacity: 0;
+   }
+   5% {
+      opacity: 1;
+
+      transform: translateY(0px);
+   }
+   17% {
+      opacity: 1;
+
+      transform: translateY(0px);
+   }
+   19% {
+      opacity: 0;
+   }
+   20% {
+      transform: translateY(20px);
+   }
+   80% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+.header {
+   position: relative;
+   padding: 10em 0;
+   background-color: $gray;
+
+   &::before,
+   &::after {
+      position: absolute;
+      color: $info;
+      font-size: 6em;
+   }
+   &::before {
+      content: "<>";
+      top: 0;
+      left: 0;
+   }
+   &::after {
+      content: "</>";
+      bottom: 0;
+      right: 0;
+   }
+   .row {
+      p {
+         text-align: left;
+         color: $info;
+         font-size: 1.5em;
+      }
+      h1 {
+         color: $yellow;
+         font-size: 5em;
+      }
+      h2 {
+         font-size: 2em;
+         margin-left: -6em;
+         color: $white;
+         word-break: break-all;
+         .animated {
+            span {
+               color: $info;
+            }
+         }
+      }
+   }
+}
+@include md {
+   .header {
+      font-size: 0.9rem;
+      .row {
+         p {
+            text-align: center;
+            font-size: 1rem;
+         }
+      }
+   }
+}
+@include sm {
+   .header {
+      font-size: 0.5rem;
+      .row {
+         h2 {
+            text-align: center;
+            margin-left: 0em;
+            .animated {
+               display: block;
+               margin-left: -7em;
+            }
+         }
+      }
+   }
+}
+
+// @include xl {
+//    .header {
+//       font-size: 2rem;
+//    }
+// }

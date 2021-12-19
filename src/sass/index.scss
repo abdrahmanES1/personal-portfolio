@@ -1,0 +1,20 @@
+//varliables and functions
+@import "variables";
+
+
+// base and grid
+@import "colors";
+@import "breakpoints";
+@import "grid";
+@import "base";
+
+
+// layout
+@import "./component/navbar";
+@import "./component/hero";
+
+//.  utilities
+@import "utilities";
+
+
+

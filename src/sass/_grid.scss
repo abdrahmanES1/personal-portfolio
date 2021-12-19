@@ -1,0 +1,92 @@
+$grid-colums: 12;
+$justify-content: "center", "end", "start", "space-between", "space-around";
+$flex-direction: row, column;
+$align-items: "center", "end", "start", "space-between", "space-around";
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+.container {
+   width: 100%;
+   padding: 0 20px;
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+@each $key in $justify-content {
+   .justify-#{$key} {
+      justify-content: #{$key};
+   }
+}
+@each $key in $align-items {
+   .align-#{$key} {
+      align-items: #{$key};
+   }
+}
+@each $key in $flex-direction {
+   .flex-#{$key} {
+      flex-direction: $key;
+   }
+}
+
+@for $i from 1 through $grid-colums {
+   .col-#{$i} {
+      flex: 0 0 auto;
+      width: ($i * 100%) / $grid-colums;
+   }
+}
+
+@include xs {
+   @for $i from 1 through $grid-colums {
+      .col-xs-#{$i} {
+         flex: 0 0 auto;
+         width: ($i * 100%) / $grid-colums;
+      }
+   }
+}
+
+@include sm {
+   @for $i from 1 through $grid-colums {
+      .col-sm-#{$i} {
+         flex: 0 0 auto;
+         width: ($i * 100%) / $grid-colums;
+      }
+   }
+}
+
+@include md {
+   @for $i from 1 through $grid-colums {
+      .col-md-#{$i} {
+         flex: 0 0 auto;
+         width: ($i * 100%) / $grid-colums;
+      }
+   }
+}
+
+@include lg {
+   @for $i from 1 through $grid-colums {
+      .col-lg-#{$i} {
+         flex: 0 0 auto;
+         width: ($i * 100%) / $grid-colums;
+      }
+   }
+}
+
+@include xl {
+   @for $i from 1 through $grid-colums {
+      .col-xl-#{$i} {
+         flex: 0 0 auto;
+         width: ($i * 100%) / $grid-colums;
+      }
+   }
+}
+
+@include xxl {
+   @for $i from 1 through $grid-colums {
+      .col-xxl-#{$i} {
+         flex: 0 0 auto;
+         width: ($i * 100%) / $grid-colums;
+      }
+   }
+}
