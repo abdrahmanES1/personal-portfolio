@@ -1,0 +1,29 @@
+.about{
+    padding: 70px 0;
+    color: $gray;
+
+    .about__header{
+        h1,h2{
+            margin:15px 0;
+            color: $gray;
+        }
+        h1{
+            font-weight: 300;
+        }
+         h2{
+              font-weight: 600;
+        }
+    }
+
+    .about__desc{
+        
+     span{
+         background-color: $info;
+     }
+        p{
+            margin-top: 20px;
+        }
+    }
+    
+
+}

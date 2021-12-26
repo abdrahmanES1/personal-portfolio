@@ -1,4 +1,6 @@
-.angele1 {
+.angele1::after {
+   content: '';
+   position: absolute;
    clip-path: polygon(0 0, 100% 0, 100% 54%, 0 29%);
    background-color: #fcce07;
    height: 140px;
