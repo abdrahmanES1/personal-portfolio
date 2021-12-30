@@ -1,44 +1,45 @@
-.SkillsTool{
-    padding: 20px 0;
-    color: $gray;
-    
-   h1,h2{
-            margin:15px 0;
-            color: $gray;
-        }
-        h1{
-            font-weight: 300;
-        }
-         h2{
-              font-weight: 600;
-        }
+.SkillsTool {
+   padding: 20px 0;
+   color: $gray;
 
-    .icons-container{
-        margin: 10px 0;
-        padding: 10px 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    
-        .box-icon{
-            flex: 0 0 auto;
-            width: max(250px, 20%);
-            text-align: center;
-            padding: 10px;
-            @include md{
-                    &{
-                        width: 50%;
-                    }
-                }
-                
-            i{
-                font-size: 8rem;
+   h1,
+   h2 {
+      margin: 15px 0;
+      color: $gray;
+   }
+   h1 {
+      font-weight: 300;
+   }
+   h2 {
+      font-weight: 600;
+   }
+
+   .icons-container {
+      margin: 10px 0;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .box-icon {
+         flex: 0 0 auto;
+         width: 250px;
+         text-align: center;
+         padding: 10px;
+
+         i {
+            font-size: 8rem;
+         }
+
+         @include md {
+            & {
+               width: 50%;
             }
-            
-        }
-    }
-    .working-on{
-        p{
-            margin-bottom: 25px;
-        }
-    }
+         }
+      }
+   }
+   .working-on {
+      p {
+         margin-bottom: 25px;
+      }
+   }
 }
