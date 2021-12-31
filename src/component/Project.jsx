@@ -13,15 +13,14 @@ function Project(props) {
             <h2>{title}</h2>
 
             <a href={link} target="_blank" rel="noreferrer">
-               view it here
+               Live
             </a>
 
-            <p>
-               <a href={repos} target="_blank" rel="noreferrer">
-                  view github repo
-               </a>
-            </p>
-            <span>{tools}</span>
+            <a href={repos} target="_blank" rel="noreferrer">
+               View Repo
+            </a>
+
+            <p className="text-center pt-1">{tools}</p>
          </div>
       </div>
    );

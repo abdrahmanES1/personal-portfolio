@@ -1,0 +1,177 @@
+.contact-me {
+   font-family: inherit;
+   padding: 20px 0;
+   span.error {
+      color: $error;
+      margin: 0;
+      padding: 0;
+   }
+   span.error ~ .app-form-control {
+      box-shadow: inset 10px 20px 2px $error;
+      color: red;
+   }
+   .contact-header {
+      h1,
+      h2,
+      p {
+         margin: 15px 0;
+         color: $gray;
+      }
+      h1 {
+         font-weight: 300;
+      }
+      h2 {
+         font-weight: 600;
+      }
+   }
+
+   .container-sm {
+      padding: 0 50px;
+      width: 100%;
+      padding: 0 20px;
+      margin: 0 auto;
+      max-width: 1200px;
+   }
+
+   textarea,
+   input {
+      resize: none;
+      font-family: inherit;
+   }
+
+   .background {
+      display: flex;
+   }
+
+   .container {
+      flex: 0 1 700px;
+      margin: auto;
+      padding: 10px;
+   }
+
+   .screen {
+      position: relative;
+      background: $gray;
+      border-radius: 15px;
+   }
+
+   .screen:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      border-radius: 15px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      z-index: -1;
+   }
+   .screen-body {
+      display: flex;
+   }
+
+   .screen-body-item {
+      flex: 1;
+      padding: 50px;
+   }
+
+   .screen-body-item.left {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .app-title {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      color: $yellow;
+      font-size: 26px;
+   }
+
+   .app-title:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 25px;
+      height: 4px;
+      background: $yellow;
+   }
+
+   .app-contact {
+      margin-top: auto;
+      font-size: 8px;
+      color: #888;
+   }
+
+   .app-form-group {
+      margin-bottom: 15px;
+   }
+
+   .app-form-group.message {
+      margin-top: 40px;
+   }
+
+   .app-form-group.buttons {
+      margin-bottom: 0;
+      text-align: right;
+   }
+
+   .app-form-control {
+      width: 100%;
+      padding: 10px 0;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $white;
+      color: #ddd;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+   }
+
+   .app-form-control::placeholder {
+      color: $white;
+   }
+
+   .app-form-control:focus {
+      border-bottom-color: $yellow;
+   }
+
+   .app-form-button {
+      background: none;
+      border: none;
+      color: $info;
+      font-size: 14px;
+      cursor: pointer;
+      outline: none;
+   }
+
+   .app-form-button:hover {
+      color: $info;
+   }
+
+   @include md {
+      .screen-body {
+         flex-direction: column;
+      }
+
+      .screen-body-item.left {
+         margin-bottom: 0px;
+         padding-bottom: 0px;
+      }
+
+      .app-title {
+         flex-direction: row;
+      }
+
+      .app-title span {
+         margin-right: 12px;
+      }
+
+      .app-title:after {
+         display: none;
+      }
+   }
+}

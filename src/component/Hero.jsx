@@ -17,6 +17,8 @@ const Hero = () => {
                         <span>football lover.</span>
                      </div>
                   </h2>
+                  <a href="#about">About Me</a>
+                  <a href="#contact-me">Contact Me</a>
                </div>
             </div>
          </div>

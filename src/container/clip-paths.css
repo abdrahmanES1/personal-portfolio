@@ -1,9 +1,45 @@
 .angele1::after {
-   content: '';
+   content: "";
    position: absolute;
    clip-path: polygon(0 0, 100% 0, 100% 54%, 0 29%);
    background-color: #fcce07;
    height: 140px;
    width: 100%;
-   box-shadow: 1px 3px 5px rgb(0 0 0 / 10%);
+   box-shadow: 1px 3px 5px rgb(0 0 0 / 10%),
+      inset 0px 20px 33px rgb(0 0 0 / 10%);
+}
+
+.angele2::after {
+   content: "";
+   position: absolute;
+   clip-path: polygon(0 50%, 100% 100%, 100% 43%, 0 0);
+   background-color: #fcce07;
+   height: 200px;
+   z-index: -1;
+   width: 100%;
+   box-shadow: 1px 3px 5px rgb(0 0 0 / 10%),
+      inset 0px 20px 33px rgb(0 0 0 / 10%);
+}
+
+.angele3::after {
+   content: "";
+   position: absolute;
+   /* clip-path: polygon(0 0, 100% 0, 100% 54%, 0 29%); */
+   background-color: #fcce07;
+   height: 220px;
+   z-index: -1;
+   width: 100%;
+   box-shadow: 1px 3px 5px rgb(0 0 0 / 10%),
+      inset 0px 20px 33px rgb(0 0 0 / 10%);
+}
+
+.angele4::after {
+   content: "";
+   position: absolute;
+   background-color: #fcce07;
+   height: 300px;
+   z-index: -1;
+   width: 100%;
+   box-shadow: 1px 3px 5px rgb(0 0 0 / 10%),
+      inset 0px 20px 33px rgb(0 0 0 / 10%);
 }

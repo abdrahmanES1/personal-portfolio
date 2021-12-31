@@ -1,5 +1,5 @@
 .projects {
-   padding-bottom: 45px;
+   padding: 45px;
    .title {
       h1,
       h2 {
@@ -24,6 +24,7 @@
             color: $info;
             background-color: $gray;
             width: 300px;
+            height: 450px;
             margin: 10px;
             border-radius: 15px;
             overflow: hidden;
@@ -41,19 +42,17 @@
                a {
                   color: $white;
                   position: relative;
-
-                  &::after {
-                     content: "";
-                     position: absolute;
-                     bottom: -2px;
-                     left: 0;
-                     height: 4px;
-                     width: 50%;
-                     background-color: $yellow;
-                     transition: width 0.5s ease-in;
-                  }
-                  &:hover::after {
-                     width: 100%;
+                  padding: 5px;
+                  display: inline-block;
+                  margin: 5px;
+                  border: 1px solid;
+                  border-radius: 15px;
+                  transition: background-color 0.5s ease, color 0.5s ease,
+                     transform 0.5s ease;
+                  &:hover {
+                     background-color: $info;
+                     color: $gray;
+                     transform: translateY(-10%);
                   }
                }
             }
