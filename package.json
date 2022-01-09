@@ -7,6 +7,8 @@
       "@testing-library/jest-dom": "^5.16.1",
       "@testing-library/react": "^11.2.7",
       "@testing-library/user-event": "^12.8.3",
+      "ansi-html": "^0.0.7",
+      "node-forge": "^1.2.0",
       "node-sass": "^4.14.1",
       "normalize.css": "^8.0.1",
       "postcss": "^8.4.5",
@@ -17,6 +19,7 @@
       "react-router-dom": "^6.2.1",
       "react-scripts": "4.0.3",
       "sass": "^1.44.0",
+      "trim-newlines": "^4.0.2",
       "web-vitals": "^1.1.2"
    },
    "scripts": {
