@@ -69,22 +69,20 @@
    a {
       display: inline-block;
       padding: 10px;
-      color: $white;
+      color: $gray;
       background-color: $info;
       margin-top: 10px;
       border-radius: 15px;
-      transition: box-shadow 0.5s ease, color 0.5s ease,
-         transform 0.5s ease;
-         border: 1px solid transparent;
+      transition: box-shadow 0.5s ease, color 0.5s ease, transform 0.5s ease;
+      border: 1px solid transparent;
       &:last-child {
          margin-left: 2rem;
       }
       &:hover {
-         box-shadow: inset 0px 0px 3px 0px $gray, 0px 0px 9px 0px $yellow;
-         
-         border-color:$gray;
+         box-shadow: 0px 4px 6px 0px $yellow;
+         border-color: $gray;
          transform: translateY(-10%) scale(1.1);
-         color: $gray;
+         color: $white;
       }
    }
 

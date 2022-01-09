@@ -1,6 +1,9 @@
 .contact-me {
    font-family: inherit;
    padding: 20px 0;
+   label {
+      color: $yellow;
+   }
    span.error {
       color: $error;
       margin: 0;

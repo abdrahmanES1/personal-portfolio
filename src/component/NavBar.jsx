@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
    const [isOpen, SetOpen] = useState(false);
    const navtoggle = (e) => {
@@ -17,12 +17,12 @@ const NavBar = () => {
             </div>
             <ul className={`nav__list-items ${isOpen && "mobile-active"}`}>
                <li className="nav__list-item">
-                  <a href="/" className="">
+                  <a href="#about" className="">
                      about
                   </a>
                </li>
                <li className="nav__list-item">
-                  <a href="/" className="">
+                  <a href="/#SkillsTool" className="">
                      Skills & tools
                   </a>
                </li>
@@ -32,12 +32,12 @@ const NavBar = () => {
                   </a>
                </li>
                <li className="nav__list-item">
-                  <a href="/" className="">
+                  <a href="#projects" className="">
                      work
                   </a>
                </li>
                <li className="nav__list-item">
-                  <a href="/" className="">
+                  <a href="#contact-me" className="">
                      Contact
                   </a>
                </li>

@@ -90,14 +90,17 @@ const Contact = () => {
                                     )}
                                  </div>
                                  <div className="app-form-group message">
+                                    <label htmlFor="textarea">Subject</label>
                                     <textarea
+                                       id="textarea"
                                        className="app-form-control"
                                        {...register("message", {
                                           minLength: 10,
                                        })}
                                        ref={textarea}
                                        onFocus={textareaOnFocus}
-                                       defaultValue="Message Me......"></textarea>
+                                       defaultValue="Message Me......"
+                                    ></textarea>
                                     {errors.message && (
                                        <span className="error">
                                           Message is required
@@ -107,12 +110,14 @@ const Contact = () => {
                                  <div className="app-form-group buttons">
                                     <button
                                        className="app-form-button"
-                                       type="reset">
+                                       type="reset"
+                                    >
                                        CANCEL
                                     </button>
                                     <button
                                        className="app-form-button"
-                                       type="submit">
+                                       type="submit"
+                                    >
                                        SEND
                                     </button>
                                  </div>
