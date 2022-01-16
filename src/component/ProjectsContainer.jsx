@@ -5,6 +5,7 @@ import Doob from "../assets/Doob.png";
 import Leon from "../assets/Leon.png";
 import Nubis from "../assets/Nubis.png";
 import todo from "../assets/todo.png";
+import ecomapp from "../assets/ecom-app.png";
 
 const ProjectsContainer = () => {
    const projects = [
@@ -46,6 +47,14 @@ const ProjectsContainer = () => {
          link: "https://abdrahmanes1.github.io/git-users/",
          repos: "https://github.com/abdrahmanES1/git-users",
          img: github,
+         tools: ["Html5 ", "Css3 ", "Bootstrap ", "react.js "],
+      },
+      {
+         id: 6,
+         title: "ecom app",
+         link: "https://ecom-app1.netlify.app/",
+         repos: "https://github.com/abdrahmanES1/ecom-app",
+         img: ecomapp,
          tools: ["Html5 ", "Css3 ", "Bootstrap ", "react.js "],
       },
    ];
